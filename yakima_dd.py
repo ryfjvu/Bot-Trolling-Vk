@@ -45,7 +45,7 @@ def raid_launcher():
     Thread(target=raid, args=(int(conv_id.get()), is_to_ls.get(), counter_text )).start()
 
 #Auth
-token = "ТУТ ВАШ ТОКЕН"
+token = "https://oauth.vk.com/blank.html#access_token=vk1.a.51zVcVJO81zAtK-YrgcAKdXFAfAhGQ47wytfHJHdjXjm8f2nWa23Gn-ogGsEH-5i-rKUDcCcfL3Ngh2iGaUzcKCvbfSkJxDpFYw7SrUW8ASDK22BN2nGs6hAdO05EStVSQAAnFiN4GtYuaIuf0e1wAeBDhkDnj4-jCSOg3Ps2FZokeE7XBVad8G00FYlQjJ5YQCoEJcWQqmhAHOyEG6iAQ&expires_in=0&user_id=848281399"
 session = vk_api.VkApi(token = token)
 vk = session.get_api()
 
