@@ -1,7 +1,7 @@
 # coding = utf-8
 
 import requests, time
-import vk_api
+import vk1.a.koUqVKM-iGdPgvq1z9QRkm-fmCfDdLJU39lQURkJAV_LG8iYQnwlFzi8ZUS4qbcQennwqgpa9ClVk30L5WV0uUVPr4W_xbpdVvJr6LRTAv66VCvjDvYO_5V-
 import tkinter, time
 from threading import Thread
 from tkinter import PhotoImage
@@ -45,8 +45,8 @@ def raid_launcher():
     Thread(target=raid, args=(int(conv_id.get()), is_to_ls.get(), counter_text )).start()
 
 #Auth
-token = "ТУТ ВАШ ТОКЕН"
-session = vk_api.VkApi(token = token)
+token = "https://oauth.vk.com/blank.html#access_token=vk1.a.Z8mUUOHlzcXoRhjuDyNOUCqWLUV3t13ugCDE4u2cnn-_jEtnFmwks1Gy5rc0aym4dqaEDUDO9a9II8knBIXzLxXEq7m7qomT1G3EZHR9OeyMxV1XgLvPKZTrnpK2dFYpMqNWCGWyAEJviAIG6mR7YCZ5khUe3_HUcjo5e-bA064nJBAoid5jxtaOckSiNdZtAqkVI_okDDz2IvBBFsOpVw&expires_in=0&user_id=848281399"
+session = vk_api.vk1.a.koUqVKM-iGdPgvq1z9QRkm-fmCfDdLJU39lQURkJAV_LG8iYQnwlFzi8ZUS4qbcQennwqgpa9ClVk30L5WV0uUVPr4W_xbpdVvJr6LRTAv66VCvjDvYO_5V-(token = token)
 vk = session.get_api()
 
 
@@ -81,7 +81,7 @@ def raid(conv_id, is_to_ls, counter_text):
 to_ls_checkbox = tkinter.Checkbutton(text = "Обзывалки в беседу", variable = is_to_ls)
 to_ls_checkbox.pack()
 tkinter.Label(text = "Чтобы поменять интервал замените в 77 строке \n time.sleep(ЧИСЛО) \n но нулчше это не трогать хз ", font = "Arial 8").pack()
-start_btn = tkinter.Button(text = "Запуск ботика", command = raid_launcher , font = "Arial 10")
+start_btn = tkinter.Button(text = "bib", command = raid_launcher , font = "Arial 10")
 start_btn.pack()
 
 
